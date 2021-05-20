@@ -11,6 +11,7 @@ while True:
     key_pressed =cv2.waitKey(1) & 0xFF
 
     if key_pressed == ord('q'):
+        print("Exiting Video Capture")
         break
 
 cap.release()

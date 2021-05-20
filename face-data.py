@@ -37,3 +37,10 @@ while True:
         
         cv2.imshow(str(k), face_selection)
         
+
+
+        # this doesn't work, need to make this work and few other modules 
+        # so what does this py does..??
+        # this program will access face data and recognize
+        #im following this tutorial
+
