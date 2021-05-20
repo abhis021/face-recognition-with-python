@@ -2,7 +2,7 @@ import face_recognition
 import argparse
 import cv2
 import pickle
-import imutils, camera_access
+import imutils, camera_access, predict_faces
 
 ap=argparse.ArgumentParser()
 ap.add_argument("-y", "--display", type = int, default=1, help= "whether or not to display output frame to screen")
