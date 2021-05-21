@@ -13,7 +13,7 @@ file_name = input("Enter the name of the person: ")
 while True:
     ret, frame = cap.read()
 
-    gray_frame = cv2.cvtColor(frame.cv2.COLOR_BGR2GRAY)
+    gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     if ret == False:
         continue
@@ -40,9 +40,9 @@ while True:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
         cv2.imshow("faces", frame)
 
-        key_pressed = cv2.waitKey(1) & 0xFF
-        if key_pressed == ord('q'):
-            break
+    key_pressed = cv2.waitKey(1) & 0xFF
+    if key_pressed == ord('q'):
+        break
 face_data = np.array(face_data)
 face_data = face_data.reshape((face_data.shape[0], -1))
 print(face_data.shape)
