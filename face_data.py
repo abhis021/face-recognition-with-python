@@ -44,7 +44,7 @@ while True:
 		cv2.imshow(str(k), face_selection)
 		k += 1
 		
-		cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
+		cv2.rectangle(frame,(x,y),(x+w,y+h),(0,0,255),2)
 
 	cv2.imshow("faces",frame)
 

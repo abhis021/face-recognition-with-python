@@ -28,7 +28,7 @@ while True:
 	if(skip%10==0):
 		pass
 	for(x,y,w,h) in faces:
-		cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),1)
+		cv2.rectangle(frame,(x,y),(x+w,y+h),((0,0,255)),2)
 		cv2.imshow("faces",frame)
 
 	key_pressed = cv2.waitKey(1) & 0xFF
