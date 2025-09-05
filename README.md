@@ -1,0 +1,1 @@
+This project is a simple python program that utilizes numpy arrays to record the faces of people and then uses the recorded faces to recognize the people in front of the webcam. It is really fast as well.
